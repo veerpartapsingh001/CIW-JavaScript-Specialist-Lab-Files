@@ -11,7 +11,7 @@
 <hr />
 
 <script type="text/javascript">
-<!--
+
 
 /***************************************************
  Mistakes in code cost time and money.  Watch your
@@ -25,8 +25,19 @@ var d =   prompt("Enter a fourth number", "");
 var e =   prompt("Enter a fifth number", "");
 
 var solution = a*b+c+d*e;
-
-
+alert(a + " " + b + " "+ c + " "+ d + " " + e)
+/*
+var firstpart = a * b + c;
+alert("a * b + c = " + firstpart);
+var f = (a*b+c+d*e);
+alert("f = a*b+c+d*e =" + f);
+*/
+var f = (Number(a) * Number(b) + Number(c));
+var solution = (Number(a)*Number(b)+Number(c)) + d*e;
+alert(a + " " + b + " "+ c + " "+ d + " " + e)
+alert("a times b plus c is " + f);
+var dtimese = d*e;
+alert("d times e = " + dtimese);
 document.write("The total you are looking for is a*b+c+d*e = " + solution);
 /*Using all 2s for input, the answer should be 10*/
 
