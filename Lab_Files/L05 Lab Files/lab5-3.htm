@@ -5,7 +5,7 @@
 <title>Lab 5-3</title>
 
 <script type="text/javascript">
-<!--
+
 
 
 /************************************************
@@ -42,7 +42,33 @@ Select numerical grade value:
 <select name="myselect">
 
 <script type="text/javascript">
-<!--
+
+function checkGrade(form) {
+  var myGrade = form.myselect.options[form.myselect.selectedIndex].text; 
+  if(myGrade >= 91) {
+    alert("Your grade is an A.");
+  }
+  else if(myGrade >= 81 && myGrade <= 90) { 
+    alert("Your grade is a B.");
+  }
+  else {
+    alert("Your grade is a C or lower.");
+  }
+}
+
+</script>
+
+</head>
+
+<body>
+
+<h3>CIW JavaScript Specialist</h3>
+<hr />
+<form name="myForm">
+Select numerical grade value:
+<select name="myselect">
+
+<script type="text/javascript">
 
 /*********************************************************************
   Create a for statement. Inside the for definition, create a variable 

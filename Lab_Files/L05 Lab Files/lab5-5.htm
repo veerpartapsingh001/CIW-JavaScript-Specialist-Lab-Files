@@ -12,7 +12,7 @@
 <hr />
 
 <script type="text/javascript">
-<!--
+
 
 /*********************************************************************
   On each iteration of the loop, use a document.write() statement to 
@@ -22,7 +22,7 @@
   Hint: Use the modulus operator (%) and the continue statement
   ********************************************************************/
   for (var i = 1; i <= 100; i++) {
-
+    if(i % 7) continue;
     document.write(i + "<br />");
   }
 
