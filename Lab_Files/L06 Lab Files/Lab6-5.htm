@@ -20,15 +20,22 @@
 **************************************************************/
 	
     
-	
-	
-	
-	
-	
-	
-	
-	
-	
+var ciw_on, ciw_off; 
+    
+	var ciw1_on, ciw1_off
+
+	ciw_on = new Image(); 
+	ciw_on.src = "images/ciw_on.gif";
+
+	ciw_off = new Image(); 
+	ciw_off.src = "Images/ciw_off.gif"
+
+	ciw1_on = new Image(); 
+	ciw_on1.src = "images/ciw1_on.gif";
+
+	ciw1_off = new Image(); 
+	ciw1_off.src = "Images/ciw1_off.gif"
+
 	function imageOn(imagename) {
 	  if (document.images) {
 	    (imagename == "ciw")  ? document.images[0].src = ciw_on.src : "";
