@@ -5,7 +5,7 @@
 <title>Lab 7-2</title>
 
 <script type="text/Javascript">
-<!--
+
 
 function showUpper(checked) {
   var showThis;
@@ -21,6 +21,13 @@ function emailTest(form)  {
   if (form.email_address.value.indexOf("@", 0) < 0) {
     alert("This is not a valid e-mail address!");
   } else {
+    var strLength = document.myform.email_address.value.length;
+    if(strLength < 6) { alert("this email address is too short."); 
+    goodemail=1;
+    }
+    if(goodemail == 0) {
+      alert("This could be a valid e-mail address, that meets all criteria.");
+    }
     alert("This could be a valid e-mail address");
   }
 }
@@ -31,7 +38,7 @@ function showFirst2(form)  {
 }
 
 
-//-->
+
 </script>
 </head>
 <body>
