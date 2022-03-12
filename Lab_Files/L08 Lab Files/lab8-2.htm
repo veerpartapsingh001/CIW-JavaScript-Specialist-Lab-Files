@@ -5,11 +5,20 @@
 <title>Lab 8-2</title>
 
 <script type="text/javascript">
-<!--
+
     
 // create a class here
-
-
+class device {
+            constructor(name, brand) {
+                this.name = name
+                this.brand = brand
+            }
+            display() {
+                document.write(`The name of this device is` + this.name + `and it's brand is` + this.brand);
+            }
+        }
+        var fncn = new device(`Vostro`, `Dell`)
+        fncn.display();
 //-->
 </script>
 </head>

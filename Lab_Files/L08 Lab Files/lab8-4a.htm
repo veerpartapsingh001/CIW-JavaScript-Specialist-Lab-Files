@@ -5,7 +5,7 @@
 <title>Lab 8-1: Employee Database</title>
 
 <script type="text/javascript">
-<!--
+
     
   function employeeObject(name,department,extension) {
       this.name = name;
@@ -20,7 +20,7 @@
     employees[1] = new employeeObject("Mai Li", "Sales", 551);
     employees[2] = new employeeObject("Maria Alvarez", "Human Resources", 441);
     employees[3] = new employeeObject("Tom Smith", "Marketing", 331);
-	employeeObject.employed = "Yes";
+	employeeObject.employed = "True";
   
   var len = employees.length;
   
@@ -55,9 +55,8 @@
 <strong>Select name to view information:</strong> 
 <select name="empName" onchange="showEmployee.call(employees[this.selectedIndex]); this.selectedIndex=0;">
 <script language="JavaScript" type="text/javascript">
-<!--
 
-  for (var i = 0; i < len; i++) {
+for (var i = 0; i < len; i++) {
     if(i == 0)
     document.write("<option>" + employees[i]) + "</option>";
     else
