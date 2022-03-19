@@ -5,63 +5,86 @@
 <title>Lab 9-1</title>
 
 <script type="text/javascript">
-<!--
-function changeButton()
-{
-  if(document.getElementById('radiobuttonWebdev').checked === true)
-  {
-	radioButton = document.getElementById('radiobuttonWebdev').value;
-	var header = document.getElementById('radiobuttonWebdev').value.innerHTML = "Web Developer!";
-	alert("Hello " + header);
-  }
-  if(document.getElementById('radiobuttonGovernment').checked === true)
-  {
-	radioButton = document.getElementById('radiobuttonGovernment').value;
-	var header = document.getElementById('radiobuttonWebdev').value.innerHTML = "Uncle Sam!";
-	alert("Hello " + header);
-  }
-  getTest();
-}
--->
-</script>
+
+function changeButton() {
+        if (document.getElementById('radiobuttonWebdev').checked === true) {
+          radioButton = document.getElementById('radiobuttonWebdev').value;
+          var header = document.getElementById('radiobuttonWebdev').value.innerHTML = "Web Developer!";
+          alert("Hello " + header);
+        }
+        if (document.getElementById('radiobuttonGovernment').checked === true) {
+          radioButton = document.getElementById('radiobuttonGovernment').value;
+          var header = document.getElementById('radiobuttonWebdev').value.innerHTML = "Uncle Sam!";
+          alert("Hello " + header);
+        }
+        if (document.getElementById('radiobuttonYoutube').checked === true) {
+          radioButton = document.getElementById('radiobuttonYoutube').value;
+          var header = document.getElementById('radiobuttonWebdev').value.innerHTML = "Creator!";
+          alert("Hello " + header);
+        }
+        if (document.getElementById('radiobuttonAdobe').checked === true) {
+          radioButton = document.getElementById('radiobuttonAdobe').value;
+          var header = document.getElementById('radiobuttonWebdev').value.innerHTML = "Artist!";
+          alert("Hello " + header);
+        }
+        if (document.getElementById('radiobuttonGithub').checked === true) {
+          radioButton = document.getElementById('radiobuttonGithub').value;
+          var header = document.getElementById('radiobuttonWebdev').value.innerHTML = "Programmer!";
+          alert("Hello " + header);
+        }
+        getTest();
+      }
+    //-->
+  </script>
 </head>
 
 <body>
-<h3>CIW JavaScript Specialist</h3>
-<hr />
-<form>
-<p>Please select your favorite type of Web site:</p>
-<input id="radiobuttonWebdev" type="radio" name="group1" value="Web_Development" checked>Web Development</input><br />
-<input id="radiobuttonGovernment" type="radio" name="group1" value="Government">U.S. Government</input><br />
-<input id="a" type="radio" name="group1" value="A">A</input><br />
-<input id="b" type="radio" name="group1" value="B">B</input><br />
-<input id="c" type="radio" name="group1" value="C">C</input><br />
+  <h3>CIW JavaScript Specialist</h3>
+  <hr />
+  <form>
+    <p>Please select your favorite type of Web site:</p>
+    <input id="radiobuttonWebdev" type="radio" name="group1" value="Web_Development" checked>Web
+    Development</input><br />
+    <input id="radiobuttonGovernment" type="radio" name="group1" value="Government">U.S. Government</input><br />
+    <input id="radiobuttonYoutube" type="radio" name="group1" value="Youtube">Youtube</input><br />
+    <input id="radiobuttonAdobe" type="radio" name="group1" value="Adobe">Adobe</input><br />
+    <input id="radiobuttonGithub" type="radio" name="group1" value="Github">Github</input><br />
 
 
-<script type="text/javascript">
-<!--
-function getTest()
-{
-  document.write("<h3>CIW JavaScript Specialist</h3>");
-  document.write("<hr />");
+    <script type="text/javascript">
+//< !--
+        function getTest() {
+          document.write("<h3>CIW JavaScript Specialist</h3>");
+          document.write("<hr />");
 
-  if(radioButton == "Web_Development")
-  {
-	document.write("<p>Here's a great site for Web developers:</p><a href=http://www.CIWcertified.com/>CIW Certified</a>");
-  }
-	
-  if(radioButton == "Government")
-  {
-	document.write("<p>Here's a great site if you're interested in U.S. government:</p><a href=http://www.whitehouse.gov/>The White House</a>");
-  }
-}
--->
-</script>
+          if (radioButton == "Web_Development") {
+            document.write("<p>Here's a great site for Web developers:</p><a href=http://www.CIWcertified.com/>CIW Certified</a>");
+          }
 
-<p>
-<input type="button" onclick="changeButton()" value="Click Here" />
-</p>
-</form>
+          if (radioButton == "Government") {
+            document.write("<p>Here's a great site if you're interested in U.S. government:</p><a href=http://www.whitehouse.gov/>The White House</a>");
+          }
+          if (radioButton == "Youtube") {
+            document.write("<p>Here's a great site if you're interested in content creation:</p><a href=https://www.youtube.com/>Youtube</a>");
+          }
+          if (radioButton == "Adobe") {
+            document.write("<p>Here's a great site if you're interested in learning photoshop:</p><a href=https://helpx.adobe.com/photoshop/tutorials.html>Adobe</a>");
+          }
+          if (radioButton == "Github") {
+            document.write("<p>Here's a great site if you're interested in programming:</p><a href=https://github.com/>Github</a>");
+          }
+        }
+      //-->
+    </script>
+
+    <p>
+      <input type="button" onclick="changeButton()" value="Click Here" />
+    </p>
+  </form>
 
 </body>
+
 </html>
+© 2022 GitHub, Inc.
+Terms
+P
